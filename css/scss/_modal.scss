@@ -1,0 +1,108 @@
+.modal-test{
+    display: none;
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgba(0,0,0,.8);
+
+    & .modal-contenido{
+        font: 18px "Telefonica_Regular", "TelefonicaWeb-Regular", Arial;
+        background-color: #fff;
+        width: 500px;
+        margin: 200px auto;
+        border-radius: 4px;
+
+        @media (max-width: 768px) {
+            & {
+                width: auto;
+                margin: 200px 5px;
+            }
+        }
+
+        & .modal-body{
+            padding: 20px;
+
+            & .btn-cerrar{
+                width: 35px;
+                height: 35px;
+                background: url(../img/close_icon.svg) no-repeat 0 0/cover;
+                float: right;
+                cursor: pointer;
+            }
+
+            & .modal-titulo{
+                font: 25px "Telefonica_Light", "TelefonicaWeb-Light", Arial;
+                color: #019bf2;
+                margin-bottom: 15px;
+            }
+
+            & .modal_mensaje{
+                font-family: 'Telefonica';
+                font-size: 14px;
+                font-weight: 400;
+                color: rgb(80, 83, 90);
+            }
+
+            & .modal-form{
+                padding: 20px 0;
+
+                & .input-modal{
+            
+                    box-sizing: border-box;
+                    font-size: 15px;
+                    font-family: "Telefonica_Light", "TelefonicaWeb-Light", Arial;
+                    width: 100%;
+                    text-align: left;
+                    margin-bottom: 20px;
+                    padding: 0 4px 4px 10px;
+                    border: none;
+                    border-bottom: 1px solid #ccc;
+                    position: relative;
+                    opacity: 1;
+                    z-index: auto;
+                    color: #0b2739;
+                    box-shadow: none;
+                    background: none;
+                    line-height: 20px;
+                    height: auto !important;
+                    outline: none;
+                }
+
+                & label{
+                    display: block;
+                    margin: 10px 0;
+                }
+            }
+
+            & .modal-footer{      
+                width: 100%;    
+                padding-top: 20px;
+                display: flex;
+
+                & .btn-modal{
+                    background: #019bf2;
+                    color: white;
+                    border-radius: 30px;
+                    font-size: 16px;
+                    font-family: "TelefonicaWeb-Light";
+                    width: 100%;
+                    height: 40px;
+                    border: none;
+                    text-align: center;
+                    padding: 7px;
+                    text-decoration: none;
+                }
+
+                & .btn-modal:hover{
+                    background: #00a8ff;
+                }
+            }
+        }
+    }
+}
+
+

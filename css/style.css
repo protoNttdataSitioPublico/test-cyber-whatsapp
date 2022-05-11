@@ -1,0 +1,233 @@
+@font-face {
+  font-family: "TelefonicaWeb-Bold";
+  src: url("./fonts/TelefonicaWeb-Bold.eot");
+  src: url("./fonts/TelefonicaWeb-Bold.eot?iefix") format("eot"), url("../fonts/TelefonicaWeb-Bold.woff") format("woff"), url("../fonts/TelefonicaWeb-Bold.ttf") format("truetype"), url("../fonts/TelefonicaWeb-Bold.svg#webfontZhAFkZ39") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TelefonicaWeb-Regular";
+  src: url("./fonts/TelefonicaWeb-Regular.eot");
+  src: url("./fonts/TelefonicaWeb-Regular.eot?iefix") format("eot"), url("../fonts/TelefonicaWeb-Regular.woff") format("woff"), url("../fonts/TelefonicaWeb-Regular.ttf") format("truetype"), url("../fonts/TelefonicaWeb-Regular.svg#webfontZhAFkZ39") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TelefonicaWeb-RegularItalic";
+  src: url("./fonts/TelefonicaWeb-RegularItalic.eot");
+  src: url("./fonts/TelefonicaWeb-RegularItalic.eot?iefix") format("eot"), url("../fonts/TelefonicaWeb-RegularItalic.woff") format("woff"), url("../fonts/TelefonicaWeb-RegularItalic.ttf") format("truetype"), url("../fonts/TelefonicaWeb-RegularItalic.svg#webfontZhAFkZ39") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TelefonicaWeb-Light";
+  src: url("./fonts/TelefonicaWeb-Light.eot");
+  src: url("./fonts/TelefonicaWeb-Light.eot?iefix") format("eot"), url("../fonts/TelefonicaWeb-Light.woff") format("woff"), url("../fonts/TelefonicaWeb-Light.ttf") format("truetype"), url("../fonts/TelefonicaWeb-Light.svg#webfontZhAFkZ39") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TelefonicaWeb-ExtraLight";
+  src: url("./fonts/TelefonicaWeb-ExtraLight.eot");
+  src: url("./fonts/TelefonicaWeb-ExtraLight.eot?iefix") format("eot"), url("../fonts/TelefonicaWeb-ExtraLight.woff") format("woff"), url("../fonts/TelefonicaWeb-ExtraLight.ttf") format("truetype"), url("../fonts/TelefonicaWeb-ExtraLight.svg#webfontZhAFkZ39") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TelefonicaWeb-Hand";
+  src: url("./fonts/TelefonicaWeb-Hand.eot");
+  src: url("./fonts/TelefonicaWeb-Hand.eot?iefix") format("eot"), url("../fonts/TelefonicaWeb-Hand.woff") format("woff"), url("../fonts/TelefonicaWeb-Hand.ttf") format("truetype"), url("../fonts/TelefonicaWeb-Hand.svg#webfontZhAFkZ39") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Telefonica-regular";
+  background-color: #f3f3f3;
+}
+
+.row {
+  padding: 20px;
+}
+.row .column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+@media (max-width: 768px) {
+  .row .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+.row .column .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #fff;
+}
+.row .column .card .card-image {
+  margin: auto;
+  width: 100px;
+}
+.row .column .card .card-image img {
+  width: 100%;
+  height: auto;
+}
+.row .column .card .card-title {
+  font-family: "telefonicaWeb-Light";
+  font-size: 13px;
+  line-height: 16px;
+  color: #87888C;
+}
+.row .column .card .card-description {
+  font-family: "TelefonicaWeb-Bold";
+  color: #313235;
+  font-size: 20px;
+  height: 46px;
+}
+.row .column .card .card-footer {
+  margin: auto;
+}
+.row .column .card .card-footer .btn-solicitar {
+  background: #019bf2;
+  color: white;
+  border-radius: 30px;
+  font-size: 16px;
+  font-family: "TelefonicaWeb-Light";
+  width: 100%;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
+.row .column .card .card-footer .btn-solicitar:hover {
+  background: #00a8ff;
+}
+
+.whatsapp {
+  display: none;
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background: url("https://res.cloudinary.com/imagenesmovistar/image/upload/v1652289673/icons8-whatsapp_uucy2r.svg") no-repeat center 0px/cover;
+  -webkit-animation: load7 1.8s infinite ease-in-out;
+  animation: load7 1.8s infinite ease-in-out;
+}
+
+
+@keyframes load7 {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.2); }
+  100% { transform: translateY(0); }
+}
+
+
+@media screen and (max-width: 768px) {
+  .whatsapp {
+    display: block;
+  }
+}
+
+.modal-test {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.modal-test .modal-contenido {
+  font: 18px "Telefonica_Regular", "TelefonicaWeb-Regular", Arial;
+  background-color: #fff;
+  width: 500px;
+  margin: 200px auto;
+  border-radius: 4px;
+}
+@media (max-width: 768px) {
+  .modal-test .modal-contenido {
+    width: auto;
+    margin: 200px 5px;
+  }
+}
+.modal-test .modal-contenido .modal-body {
+  padding: 20px;
+}
+.modal-test .modal-contenido .modal-body .btn-cerrar {
+  width: 35px;
+  height: 35px;
+  background: url(../img/close_icon.svg) no-repeat 0 0/cover;
+  float: right;
+  cursor: pointer;
+}
+.modal-test .modal-contenido .modal-body .modal-titulo {
+  font: 25px "Telefonica_Light", "TelefonicaWeb-Light", Arial;
+  color: #019bf2;
+  margin-bottom: 15px;
+}
+.modal-test .modal-contenido .modal-body .modal_mensaje {
+  font-family: "Telefonica";
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(80, 83, 90);
+}
+.modal-test .modal-contenido .modal-body .modal-form {
+  padding: 20px 0;
+}
+.modal-test .modal-contenido .modal-body .modal-form .input-modal {
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: "Telefonica_Light", "TelefonicaWeb-Light", Arial;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+  padding: 0 4px 4px 10px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  opacity: 1;
+  z-index: auto;
+  color: #0b2739;
+  box-shadow: none;
+  background: none;
+  line-height: 20px;
+  height: auto !important;
+  outline: none;
+}
+.modal-test .modal-contenido .modal-body .modal-form label {
+  display: block;
+  margin: 10px 0;
+}
+.modal-test .modal-contenido .modal-body .modal-footer {
+  width: 100%;
+  padding-top: 20px;
+  display: flex;
+}
+.modal-test .modal-contenido .modal-body .modal-footer .btn-modal {
+  background: #019bf2;
+  color: white;
+  border-radius: 30px;
+  font-size: 16px;
+  font-family: "TelefonicaWeb-Light";
+  width: 100%;
+  height: 40px;
+  border: none;
+  text-align: center;
+  padding: 7px;
+  text-decoration: none;
+}
+.modal-test .modal-contenido .modal-body .modal-footer .btn-modal:hover {
+  background: #00a8ff;
+}
+
+/*# sourceMappingURL=style.css.map */
